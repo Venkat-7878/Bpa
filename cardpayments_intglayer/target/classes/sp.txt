@@ -1,0 +1,53 @@
+DELIMITER $$
+
+DROP PROCEDURE IF EXISTS `rtp4510`.`Get_Enrollment`$$
+
+CREATE DEFINER=`root`@`localhost` PROCEDURE `Get_Enrollment`(in Client_Id varchar(20),  in Channel_Id varchar(20), in Card_Num varchar(20), in Cvv_Num varchar(20), in Expiry_Date varchar(20), in Name_On_Card varchar(20),in Mobile_Num varchar(10), out Resp_Code varchar(20), out Resp_Msg varchar(20))
+proc_label:BEGIN
+
+Declare ClienId_Count int;
+Declare ChannelId_Count int;
+Declare CardNum_Count int;
+Declare CvvNum_Count int;
+
+insert into billpayment_details(Client_Id,Channel_Id,Card_Num,Cvv_Num,Expiry_Date,Name_On_Card,Mobile_Num) values(clientid,channelid,cardnum,cvv,expdate,nameOncard,mobilenum);
+set Resp_Code="0";
+set Resp_Msg="success";
+
+select count(*) into ClienId_Count from client_details where clientid=Client_Id;
+if ClienId_Count =0 then
+set Resp_Code="101";
+set Resp_Msg="Client Id invalid";
+leave proc_label;
+end if;
+
+select count(*) into ChannelId_Count from channel_details where channelid=Channel_Id;
+if ChannelId_Count =0 then
+set Resp_Code="102";
+set Resp_Msg="Channel Id invalid";
+leave proc_label;
+end if;
+
+
+select count(*) into CardNum_Count from customer_details where cardnumber=Card_Num;
+if CardNum_Count =0 then
+set Resp_Code="103";
+set Resp_Msg="Card number invalid";
+leave proc_label;
+end if;
+
+
+
+
+select count(*) into CvvNum_Count from customer_details where cvv=Cvv_Num AND cardnumber=Card_Num;                                                                                        
+if CvvNum_Count =0 then
+set Resp_Code="104";
+set Resp_Msg="Cvv Number is not mapped to card number";
+
+end if;
+
+
+
+    END$$
+
+DELIMITER ;

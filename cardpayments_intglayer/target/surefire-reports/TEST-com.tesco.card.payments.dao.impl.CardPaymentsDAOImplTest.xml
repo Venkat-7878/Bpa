@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="1" failures="0" name="com.tesco.card.payments.dao.impl.CardPaymentsDAOImplTest" time="0.032" errors="1" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="java.vm.version" value="15.0.2+7-27"/>
+    <property name="sun.boot.library.path" value="E:\eclipse\eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.2.v20210201-0955\jre\bin"/>
+    <property name="maven.multiModuleProjectDirectory" value="E:\New folder\New folder\New folder\New folder (7)\RTPV\bpa\branches"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value="Service Pack 1"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="E:\New folder\New folder\New folder\New folder (7)\RTPV\bpa\branches"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="java.runtime.version" value="15.0.2+7-27"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\VENKAT~1\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 7"/>
+    <property name="classworlds.conf" value="E:\user-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf8494601789522040146.tmp"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="E:\eclipse\eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.2.v20210201-0955\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;E:/eclipse/eclipse//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.2.v20210201-0955/jre/bin/server;E:/eclipse/eclipse//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.2.v20210201-0955/jre/bin;C:\oraclexe\app\oracle\product\11.2.0\server\bin;;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;E:\eclipse\eclipse;;."/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="59.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="6.1"/>
+    <property name="user.home" value="C:\Users\Venkatesh"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.specification.version" value="15"/>
+    <property name="user.name" value="Venkatesh"/>
+    <property name="java.class.path" value="E:\eclipse\eclipse\plugins\org.eclipse.m2e.maven.runtime_1.16.0.20210129-0849\jars\plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="15"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B install"/>
+    <property name="java.home" value="E:\eclipse\eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.2.v20210201-0955\jre"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="15.0.2"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="E:\New folder\New folder\New folder\New folder (7)\RTPV\bpa\branches\EMBEDDED"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.version.date" value="2021-01-19"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="com.tesco.card.payments.dao.impl.CardPaymentsDAOImplTest" name="initializationError" time="0.032">
+    <error message="java.lang.reflect.InvocationTargetException" type="org.objenesis.ObjenesisException">org.objenesis.ObjenesisException: java.lang.reflect.InvocationTargetException
+	at org.objenesis.instantiator.sun.SunReflectionFactoryHelper.newConstructorForSerialization(SunReflectionFactoryHelper.java:55)
+	at org.objenesis.instantiator.sun.SunReflectionFactoryInstantiator.&lt;init&gt;(SunReflectionFactoryInstantiator.java:38)
+	at org.objenesis.strategy.StdInstantiatorStrategy.newInstantiatorOf(StdInstantiatorStrategy.java:58)
+	at org.objenesis.ObjenesisBase.getInstantiatorOf(ObjenesisBase.java:91)
+	at org.powermock.reflect.internal.WhiteboxImpl.newInstance(WhiteboxImpl.java:222)
+	at org.powermock.reflect.Whitebox.newInstance(Whitebox.java:139)
+	at org.powermock.tests.utils.impl.AbstractTestSuiteChunkerImpl.registerProxyframework(AbstractTestSuiteChunkerImpl.java:158)
+	at org.powermock.tests.utils.impl.AbstractTestSuiteChunkerImpl.chunkClass(AbstractTestSuiteChunkerImpl.java:181)
+	at org.powermock.tests.utils.impl.AbstractTestSuiteChunkerImpl.&lt;init&gt;(AbstractTestSuiteChunkerImpl.java:96)
+	at org.powermock.tests.utils.impl.AbstractTestSuiteChunkerImpl.&lt;init&gt;(AbstractTestSuiteChunkerImpl.java:89)
+	at org.powermock.modules.junit4.common.internal.impl.JUnit4TestSuiteChunkerImpl.&lt;init&gt;(JUnit4TestSuiteChunkerImpl.java:49)
+	at org.powermock.modules.junit4.common.internal.impl.AbstractCommonPowerMockRunner.&lt;init&gt;(AbstractCommonPowerMockRunner.java:32)
+	at org.powermock.modules.junit4.PowerMockRunner.&lt;init&gt;(PowerMockRunner.java:34)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.junit.internal.builders.AnnotatedBuilder.buildRunner(AnnotatedBuilder.java:104)
+	at org.junit.internal.builders.AnnotatedBuilder.runnerForClass(AnnotatedBuilder.java:86)
+	at org.junit.runners.model.RunnerBuilder.safeRunnerForClass(RunnerBuilder.java:59)
+	at org.junit.internal.builders.AllDefaultPossibilitiesBuilder.runnerForClass(AllDefaultPossibilitiesBuilder.java:26)
+	at org.junit.runners.model.RunnerBuilder.safeRunnerForClass(RunnerBuilder.java:59)
+	at org.junit.internal.requests.ClassRequest.getRunner(ClassRequest.java:33)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:250)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.objenesis.instantiator.sun.SunReflectionFactoryHelper.newConstructorForSerialization(SunReflectionFactoryHelper.java:45)
+	... 35 more
+Caused by: java.lang.IllegalAccessError: class jdk.internal.reflect.ConstructorAccessorImpl loaded by org.powermock.core.classloader.MockClassLoader @7cbd213e cannot access jdk/internal/reflect superclass jdk.internal.reflect.MagicAccessorImpl
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1016)
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:877)
+	at org.powermock.core.classloader.MockClassLoader.loadUnmockedClass(MockClassLoader.java:237)
+	at org.powermock.core.classloader.MockClassLoader.loadModifiedClass(MockClassLoader.java:182)
+	at org.powermock.core.classloader.DeferSupportingClassLoader.loadClass(DeferSupportingClassLoader.java:68)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1016)
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:877)
+	at org.powermock.core.classloader.MockClassLoader.loadUnmockedClass(MockClassLoader.java:237)
+	at org.powermock.core.classloader.MockClassLoader.loadModifiedClass(MockClassLoader.java:182)
+	at org.powermock.core.classloader.DeferSupportingClassLoader.loadClass(DeferSupportingClassLoader.java:68)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+	at java.base/java.lang.System$2.defineClass(System.java:2189)
+	at java.base/jdk.internal.reflect.ClassDefiner.defineClass(ClassDefiner.java:65)
+	at java.base/jdk.internal.reflect.MethodAccessorGenerator$1.run(MethodAccessorGenerator.java:400)
+	at java.base/jdk.internal.reflect.MethodAccessorGenerator$1.run(MethodAccessorGenerator.java:394)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:312)
+	at java.base/jdk.internal.reflect.MethodAccessorGenerator.generate(MethodAccessorGenerator.java:393)
+	at java.base/jdk.internal.reflect.MethodAccessorGenerator.generateSerializationConstructor(MethodAccessorGenerator.java:112)
+	at java.base/jdk.internal.reflect.ReflectionFactory.generateConstructor(ReflectionFactory.java:466)
+	at java.base/jdk.internal.reflect.ReflectionFactory.newConstructorForSerialization(ReflectionFactory.java:379)
+	at jdk.unsupported/sun.reflect.ReflectionFactory.newConstructorForSerialization(ReflectionFactory.java:98)
+	... 40 more
+</error>
+  </testcase>
+</testsuite>
